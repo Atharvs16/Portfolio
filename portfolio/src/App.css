@@ -12,20 +12,105 @@ html,body{
 a{
   cursor: pointer;
 }
+button{
+  cursor: pointer;
+}
 nav{
   width: 100%;
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2vh 4.2vw;
+  padding: 2vh 8vw;
 }
 #right-nav{
   display: flex;
   gap: 2vw;
 }
 nav h1{
-  font-size: 1.4vw;
+  font-size: 25px;
   font-weight: 500;
   color: #242424;
+}
+#home{
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  padding: 0 8vw;
+  display: flex;
+}
+#left-home{
+  width: 5%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+#center-home{
+  width: 50%;
+  height: 100%;
+  padding: 5vh 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5vh;
+}
+#center-home h1{
+  font-size: 3.5vw;
+  font-weight: 620;
+  color: #242424;
+}
+#center-home h3{
+  font-size: 2.5vw;
+  font-weight: 350;
+}
+#center-home p{
+  font-size: 1.15vw;
+}
+#center-home button{
+  width: 45%;
+  height: 7vh;
+  background-color: #242424;
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#center-home button img{
+  width: 15%;
+  padding-left: 3%;
+}
+
+#right-home{
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#right-home img{
+  width: 25vw;
+  height: 25vw;
+  animation: pfp-animate 8s infinite ease-in-out 1s;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px #242424;
+  order: 1;
+  border: solid 5px #242424;
+}
+
+@keyframes pfp-animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
